@@ -1,0 +1,12 @@
+.toggle-switch{
+    @apply dark:bg-[#343444] bg-white shadow rounded-full h-10 mt-4 inline-flex p-1 relative items-center;
+
+    .switch-item{
+        @apply cursor-pointer w-full flex justify-center px-[20px] text-sm ;
+
+        &.indicator{
+            @apply text-sm bg-[linear-gradient(216.56deg,#f9c0d4_5.32%,#cdbdf1_94.32%)] shadow flex items-center justify-center w-1/2 rounded-full h-8 transition-all top-[4px] absolute left-1;
+        }
+    }
+
+}

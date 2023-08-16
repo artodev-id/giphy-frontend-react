@@ -1,0 +1,19 @@
+.hero-button{
+    @apply rounded-full flex justify-between;
+    .button-label{
+        @apply font-bold inline-flex items-center gap-2;
+    }
+    .icon{
+        @apply text-[18px] ;
+    }
+
+    .action-pane{
+        @apply translate-y-0 md:translate-y-[100vh] transition-[transform] transform-gpu group-hover:translate-y-0;
+    }
+    .action{
+        @apply relative inline-flex items-center cursor-pointer font-bold  text-[14px] leading-[20px] tracking-[0.1em] mt-[-20px] bg-gradient-to-r from-[#E250E5] via-[#4B50E6] to-[#E250E5] bg-clip-text bg-[length:200%_200%] 
+        animate-[rainbow_2s_ease-in-out_infinite] text-[var(--primary-color2)] duration-[0.2s] ease-in-out transition-[color] hover:!text-[rgba(0,0,0,0)]
+        before:content-[""] before:absolute before:left-0 before:bottom-[-4px] before:w-full before:h-[1px] before:bg-[linear-gradient(216.56deg,#E250E5_5.32%,#4B50E6_94.32%)]
+    }
+  
+}
